@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Post = ({match}) => {
+const Post = ({match, location}) => {
     return (
         <div>
-            포스트 {match.params.id}
+            <p>포스트 {match.params.id}</p>
+            <p>location.pathname : {location.pathname}</p>
+            <p>match.path : {match.path}</p>
+            <p>match.url : {match.url}</p>
         </div>
     );
 };
